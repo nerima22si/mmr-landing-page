@@ -36,7 +36,7 @@ function Terms() {
                 </div>
 
                 <div>
-                    <p className="font-['Poppins'] text-xs font-bold tracking-[0.25em] text-red-600">
+                    <p className="text-xs font-bold tracking-[0.25em] text-red-600">
                         TERMS SECTION
                     </p>
                     <h3 className="mt-1 text-2xl font-black italic text-black md:text-3xl">
@@ -45,7 +45,7 @@ function Terms() {
                 </div>
             </div>
 
-            <ul className="space-y-4 font-['Poppins']">
+            <ul className="space-y-4">
                 {items.map((item, index) => (
                     <li
                         key={index}
@@ -65,19 +65,39 @@ function Terms() {
     const AgreementCard = () => (
         <div className="mt-10 rounded-[2rem] bg-white p-6 text-black shadow-[0_25px_70px_rgba(0,0,0,0.22)] md:p-9">
             <div className="mb-7 text-center">
-                <span className="inline-block rounded-full bg-[#2600d9] px-6 py-3 font-['Poppins'] text-sm font-extrabold text-white">
+                <span className="inline-block rounded-full bg-[#2600d9] px-6 py-3 text-sm font-extrabold text-white">
                     SYARAT DAN KETENTUAN
                 </span>
             </div>
 
-            <div className="space-y-5 font-['Poppins'] text-sm leading-relaxed tracking-wide text-red-600 md:text-[15px] md:leading-8">
+            <div className="grid gap-4">
                 {agreementTerms.map((item, index) => (
-                    <p
+                    <div
                         key={index}
-                        className={index === agreementTerms.length - 1 ? "font-extrabold" : "font-medium"}
+                        className={`flex gap-4 rounded-2xl border p-4 text-sm leading-relaxed md:text-[15px] ${index === agreementTerms.length - 1
+                                ? "border-red-300 bg-red-100 text-red-700"
+                                : "border-red-100 bg-red-50/70 text-gray-700"
+                            }`}
                     >
-                        {item}
-                    </p>
+                        <span
+                            className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xs font-black text-white ${index === agreementTerms.length - 1
+                                    ? "bg-[#2600d9]"
+                                    : "bg-red-600"
+                                }`}
+                        >
+                            {index + 1}
+                        </span>
+
+                        <p
+                            className={
+                                index === agreementTerms.length - 1
+                                    ? "font-extrabold"
+                                    : "font-medium"
+                            }
+                        >
+                            {item}
+                        </p>
+                    </div>
                 ))}
             </div>
         </div>
@@ -114,7 +134,7 @@ function Terms() {
 
             <div className="relative z-10 mx-auto max-w-7xl">
                 <div className="text-center">
-                    <p className="font-['Poppins'] text-xs font-bold tracking-[0.4em] text-white/80">
+                    <p className="text-xs font-bold tracking-[0.4em] text-white/80">
                         MERDEKA RUN 2026
                     </p>
 
@@ -123,7 +143,7 @@ function Terms() {
                     </h2>
 
                     <div className="mt-5 inline-flex rounded-full bg-[#2600d9] px-7 py-3">
-                        <p className="font-['Poppins'] text-sm font-extrabold tracking-wide md:text-base">
+                        <p className="text-sm font-extrabold tracking-wide md:text-base">
                             SYARAT & KETENTUAN PESERTA
                         </p>
                     </div>
@@ -150,7 +170,7 @@ function Terms() {
                         BERANI MELANGKAH, MERDEKA MENJELAJAH
                     </h3>
 
-                    <p className="mt-4 font-['Poppins'] text-sm leading-relaxed text-white/85 md:text-base">
+                    <p className="mt-4 text-sm leading-relaxed text-white/85 md:text-base">
                         Dengan melakukan pendaftaran, peserta dianggap telah membaca,
                         memahami, dan menyetujui seluruh syarat serta ketentuan Merdeka Run
                         2026.
