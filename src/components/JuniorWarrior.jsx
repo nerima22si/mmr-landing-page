@@ -14,7 +14,7 @@ function JuniorWarrior() {
     return (
         <section
             id="junior-warrior"
-            className="relative overflow-hidden bg-gradient-to-br from-pink-50 via-white to-pink-100 px-5 py-24"
+            className="relative overflow-hidden bg-gradient-to-br from-pink-50 via-white to-pink-100 px-5 py-20 md:py-24"
         >
             <div className="absolute -left-24 top-0 h-80 w-80 rounded-full bg-pink-300/40 blur-3xl" />
             <div className="absolute -right-24 bottom-0 h-96 w-96 rounded-full bg-sky-300/40 blur-3xl" />
@@ -23,27 +23,33 @@ function JuniorWarrior() {
 
             <div className="relative z-10 mx-auto max-w-7xl">
                 <div className="mb-14 text-center">
-                    <p className="text-sm font-extrabold tracking-[0.35em] text-pink-500">
+                    <p className="text-xl font-black tracking-[0.22em] text-pink-500 sm:text-2xl md:text-3xl">
                         SPECIAL KIDS CATEGORY
                     </p>
 
                     <img
                         src={logoJunior}
                         alt="Junior Warrior Logo"
-                        className="mx-auto mt-5 h-[150px] object-contain drop-shadow-xl sm:h-[190px] md:h-[230px]"
+                        className="mx-auto mt-6 h-[210px] object-contain drop-shadow-2xl sm:h-[260px] md:h-[320px] lg:h-[360px]"
                     />
 
-                    <p className="mx-auto mt-5 max-w-2xl text-base font-semibold leading-relaxed text-gray-600">
-                        Lomba lari tematik untuk anak usia 5–11 tahun dengan konsep aman,
-                        ceria, edukatif, dan penuh pengalaman menyenangkan.
+                    <p className="mx-auto mt-6 max-w-3xl text-base font-semibold leading-relaxed text-gray-600 md:text-lg">
+                        Lomba lari tematik untuk anak usia{" "}
+                        <span className="font-black text-pink-500">6–11 tahun</span>{" "}
+                        dengan konsep aman, ceria, edukatif, dan penuh pengalaman
+                        menyenangkan.
                     </p>
                 </div>
 
                 <div className="grid items-center gap-12 lg:grid-cols-2">
                     <div className="text-center lg:text-left">
                         <div className="mx-auto inline-block rotate-[-5deg] rounded-2xl bg-sky-300 px-6 py-4 shadow-lg lg:mx-0">
-                            <p className="text-xl font-bold text-white">SPECIAL 300</p>
-                            <p className="text-xl font-bold text-white">JOYFUL RACE</p>
+                            <p className="text-xl font-bold text-white md:text-2xl">
+                                SPECIAL 300
+                            </p>
+                            <p className="text-xl font-bold text-white md:text-2xl">
+                                JOYFUL RACE
+                            </p>
                         </div>
 
                         <h2
@@ -77,7 +83,7 @@ function JuniorWarrior() {
                             <img
                                 src={bgJunior}
                                 alt="Junior Warrior"
-                                className="h-[360px] w-full rounded-[1.5rem] object-cover object-center sm:h-[420px] md:h-[480px]"
+                                className="h-[340px] w-full rounded-[1.5rem] object-cover object-center sm:h-[420px] md:h-[480px]"
                             />
                         </div>
 
@@ -90,7 +96,7 @@ function JuniorWarrior() {
                     </div>
                 </div>
 
-                <div className="relative z-10 mx-auto mt-24 h-12 max-w-7xl rounded-full bg-[repeating-linear-gradient(135deg,#ff55b8_0px,#ff55b8_35px,#ffc4e3_35px_70px)]" />
+                <div className="relative z-10 mx-auto mt-24 h-12 max-w-7xl rounded-full bg-[repeating-linear-gradient(135deg,#ff55b8_0px,#ff55b8_35px,#ffc4e3_35px,#ffc4e3_70px)]" />
             </div>
         </section>
     );

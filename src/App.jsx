@@ -14,12 +14,13 @@ function App() {
     <div className="min-h-screen bg-black">
       <Navbar />
       <Hero />
+      <AboutUs />
       <RaceInfo />
       <Timeline />
       <RacePack />
       <JuniorWarrior />
       <Registration />
-      <AboutUs />
+      
       <Terms />
       <Footer />
     </div>

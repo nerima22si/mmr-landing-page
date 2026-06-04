@@ -6,12 +6,13 @@ function Navbar() {
     const [open, setOpen] = useState(false);
 
     const menus = [
-        { label: "HOME", href: "#home" },
+        // { label: "HOME", href: "#home" },
         { label: "RACE INFO", href: "#race-info" },
-        { label: "TIMELINE", href: "#timeline" },
+        { label: "ABOUT US", href: "#about" },
+        // { label: "TIMELINE", href: "#timeline" },
         { label: "JUNIOR WARRIOR", href: "#junior-warrior" },
         { label: "REGISTRATION", href: "#registration" },
-        { label: "ABOUT US", href: "#about" },
+        
         { label: "T & C", href: "#terms" },
         { label: "CONTACT", href: "#contact" },
     ];
