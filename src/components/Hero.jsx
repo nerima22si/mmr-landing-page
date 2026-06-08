@@ -40,7 +40,7 @@ function Hero() {
     ];
 
     const categories = ["JUNIOR WARRIOR", "5K", "8K"];
-    const deksripsi =["","Fun Run","Challenge"];
+    const deksripsi = ["", "", ""];
 
     return (
         <section
@@ -174,7 +174,7 @@ function Hero() {
                             ))}
                         </div>
 
-                        <div className="mt-5 rounded-2xl border border-red-400/20 bg-red-600/10 p-4 text-center">
+                        {/* <div className="mt-5 rounded-2xl border border-red-400/20 bg-red-600/10 p-4 text-center">
                             <p className="text-xs font-bold tracking-[0.25em] text-red-300">
                                 START FROM
                             </p>
@@ -182,7 +182,7 @@ function Hero() {
                             <h3 className="mt-2 text-2xl font-black italic text-white sm:text-3xl">
                                 06.00 WIB
                             </h3>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

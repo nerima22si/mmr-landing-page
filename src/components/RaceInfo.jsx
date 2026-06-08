@@ -7,20 +7,20 @@ function RaceInfo() {
             color: "from-pink-500 to-pink-400",
         },
         {
-            title: "5K FUN RUN",
+            title: "5K",
             desc: "Cocok untuk pemula, komunitas, keluarga, dan peserta yang ingin menikmati suasana Merdeka Run dengan penuh semangat.",
             price: "Rp150.000",
             color: "from-red-500 to-red-700",
         },
         {
-            title: "8K CHALLENGE",
+            title: "8K ",
             desc: "Untuk peserta yang ingin tantangan lebih jauh dengan rute yang lebih kompetitif, energik, dan memacu adrenalin.",
-            price: "Rp250.000",
+            price: "Rp200.000",
             color: "from-[#1d00ff] to-[#4230ff]",
         },
     ];
     const categories = ["JUNIOR WARRIOR", "5K", "8K"];
-    const deksripsi = ["", "Fun Run", "Challenge"];
+    const deksripsi = ["", "", ""];
 
 
     return (

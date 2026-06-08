@@ -143,9 +143,8 @@ function Registration() {
                     className="rounded-[1.5rem] border border-white/10 bg-white/5 p-4 backdrop-blur-md transition hover:-translate-y-1 hover:bg-white/10"
                   >
                     <div
-                      className={`mx-auto flex h-11 w-11 items-center justify-center rounded-xl text-base font-black text-white lg:mx-0 ${
-                        index % 2 === 0 ? "bg-red-600" : "bg-[#1d00ff]"
-                      }`}
+                      className={`mx-auto flex h-11 w-11 items-center justify-center rounded-xl text-base font-black text-white lg:mx-0 ${index % 2 === 0 ? "bg-red-600" : "bg-[#1d00ff]"
+                        }`}
                     >
                       {index + 1}
                     </div>

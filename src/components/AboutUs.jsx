@@ -15,27 +15,43 @@ function AboutUs() {
 
             {/* RACE BLOCKS */}
             <div className="absolute right-0 top-32 hidden md:grid grid-cols-3 opacity-90">
-                {["#1d00ff", "#ffffff", "#ff2d20", "transparent", "#1d00ff", "#ffffff", "#ff2d20", "transparent", "#1d00ff"].map(
-                    (color, index) => (
-                        <div
-                            key={index}
-                            className="h-16 w-16"
-                            style={{ backgroundColor: color }}
-                        />
-                    )
-                )}
+                {[
+                    "#1d00ff",
+                    "#ffffff",
+                    "#ff2d20",
+                    "transparent",
+                    "#1d00ff",
+                    "#ffffff",
+                    "#ff2d20",
+                    "transparent",
+                    "#1d00ff",
+                ].map((color, index) => (
+                    <div
+                        key={index}
+                        className="h-16 w-16"
+                        style={{ backgroundColor: color }}
+                    />
+                ))}
             </div>
 
             <div className="absolute left-0 bottom-20 hidden md:grid grid-cols-3 opacity-80">
-                {["#ff2d20", "#ffffff", "#1d00ff", "#ffffff", "#1d00ff", "#ffffff", "#1d00ff", "#ffffff", "#ff2d20"].map(
-                    (color, index) => (
-                        <div
-                            key={index}
-                            className="h-14 w-14"
-                            style={{ backgroundColor: color }}
-                        />
-                    )
-                )}
+                {[
+                    "#ff2d20",
+                    "#ffffff",
+                    "#1d00ff",
+                    "#ffffff",
+                    "#1d00ff",
+                    "#ffffff",
+                    "#1d00ff",
+                    "#ffffff",
+                    "#ff2d20",
+                ].map((color, index) => (
+                    <div
+                        key={index}
+                        className="h-14 w-14"
+                        style={{ backgroundColor: color }}
+                    />
+                ))}
             </div>
 
             <div className="relative z-10 mx-auto max-w-6xl pt-52">
@@ -58,59 +74,34 @@ function AboutUs() {
                     >
                         ABOUT US
                     </h2>
-
-                    <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-gray-600 md:text-base">
-                        Merdeka Run 2026 hadir sebagai ruang gerak, semangat, dan harapan
-                        untuk generasi yang lebih sehat.
-                    </p>
                 </div>
 
-                <div className="mt-12 rounded-[2.2rem] border border-red-100 bg-white/95 p-6 shadow-[0_25px_90px_rgba(0,0,0,0.12)] backdrop-blur-xl md:p-10">
-                    <div className="grid gap-6 md:grid-cols-3">
-                        {[
-                            {
-                                title: "Filosofi",
-                                text: "Mens sana in corpore sano berarti di dalam tubuh yang sehat terdapat jiwa yang kuat.",
-                                color: "from-red-500 to-red-700",
-                            },
-                            {
-                                title: "Tujuan",
-                                text: "Mengajak masyarakat hidup lebih sehat dan aktif bergerak melalui olahraga lari.",
-                                color: "from-[#1d00ff] to-[#4230ff]",
-                            },
-                            {
-                                title: "Tema",
-                                text: "Run For Hope menjadi simbol harapan untuk bergerak dan berdampak.",
-                                color: "from-red-500 to-[#1d00ff]",
-                            },
-                        ].map((item) => (
-                            <div
-                                key={item.title}
-                                className="overflow-hidden rounded-[2rem] border border-red-100 bg-white transition duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(255,0,0,0.12)]"
-                            >
-                                <div className={`h-3 bg-gradient-to-r ${item.color}`} />
+                <div className="mt-12 rounded-[2.2rem] border border-red-100 bg-white/95 p-5 shadow-[0_25px_90px_rgba(0,0,0,0.12)] backdrop-blur-xl md:p-10">
+                    <div className="relative overflow-hidden rounded-[2rem] border border-red-100 bg-gradient-to-br from-red-50 via-white to-blue-50 p-6 md:p-10">
+                        <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-red-500/10 blur-3xl" />
+                        <div className="absolute -left-16 bottom-0 h-40 w-40 rounded-full bg-[#1d00ff]/10 blur-3xl" />
 
-                                <div className="p-6">
-                                    <h3 className="text-3xl font-black italic text-red-600">
-                                        {item.title}
-                                    </h3>
-
-                                    <p className="mt-4 text-sm leading-7 text-gray-700">
-                                        {item.text}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                    <div className="relative mt-10 overflow-hidden rounded-[2rem] border border-red-100 bg-gradient-to-br from-red-50 via-white to-blue-50 p-7 md:p-10">
                         <p className="relative z-10 text-justify text-sm font-medium leading-8 text-gray-700 md:text-base md:leading-9">
-                            Merdeka Run 2026 hadir sebagai perhelatan olahraga yang
-                            menggabungkan semangat kemerdekaan, sportainment, budaya lokal,
-                            dan gerakan hidup sehat. Event ini menjadi ruang bagi peserta
-                            untuk menikmati pengalaman olahraga yang menyenangkan, membangun
-                            kebersamaan, serta menciptakan momentum positif menuju gaya hidup
-                            yang lebih sehat.
+                            Mens sana in corpore sano merupakan sebuah kalimat yang tidak
+                            asing lagi di masyarakat, yang memiliki arti “di dalam tubuh yang
+                            sehat, terdapat jiwa yang kuat”. Filosofi ini menjadi pedoman awal
+                            dalam perumusan kegiatan Merdeka Run 2026. Merdeka Run merupakan
+                            sebuah perhelatan olahraga yang menggabungkan konsep sportainment,
+                            sehingga para pelari dapat merasakan pengalaman olahraga yang baru,
+                            menarik, dan patut ditunggu. Kota Dumai yang kaya akan potensi
+                            daerah layak menjadi destinasi perhelatan akbar bagi para pegiat
+                            olahraga lari. Kota yang menyimpan berbagai cerita dan budaya unik
+                            ini siap memberikan pengalaman yang seru, menarik, dan berkesan
+                            bagi seluruh peserta. Hal inilah yang menjadi perhatian utama kami
+                            dalam menciptakan sebuah program dengan tema “Run For Hope”, yang
+                            berarti berlari untuk harapan. Melalui tema ini, setiap gerak
+                            langkah peserta diharapkan menjadi momentum bersama untuk bergerak,
+                            berdampak, dan berkelanjutan. Merdeka Run 2026 juga menjadi momen
+                            untuk berbagi semangat dan kebahagiaan, serta menebar dan merawat
+                            nilai-nilai kebaikan di bulan kemerdekaan. Dalam kegiatan ini,
+                            peserta tidak hanya merasakan euforia olahraga, tetapi juga dapat
+                            menyaksikan rangkaian padu-padan pegiat seni dan budaya lokal yang
+                            dimulai sejak masa persiapan hingga nantinya tiba di garis finish.
                         </p>
                     </div>
                 </div>
