@@ -45,8 +45,7 @@ function RaceInfo() {
                     </h2>
 
                     <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-gray-600 md:text-base">
-                        Merdeka Run 2026 menghadirkan kategori lari untuk semua kalangan,
-                        mulai dari anak-anak hingga peserta yang ingin tantangan lebih serius.
+                        <b>MERDEKA RUN 2026</b> menghadirkan beberapa kategori lari yang dapat diikuti oleh berbagai usia dan kalangan. Berani melangkah, merdeka mejelajah!
                     </p>
                 </div>
 

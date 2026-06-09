@@ -173,7 +173,7 @@ function RacePack() {
                 {/* Bottom Text */}
                 <div className="mt-12 text-center">
                     <p className="text-sm font-bold tracking-[0.25em] text-white/70">
-                        MERDEKA RUN 2026 • DUMAI • 5K & 10K RUNNING FESTIVAL
+                        MERDEKA RUN 2026 | DUMAI |JUNIOR WARRIOR | 5K | 8K
                     </p>
                 </div>
             </div>

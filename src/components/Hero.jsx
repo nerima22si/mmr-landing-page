@@ -79,9 +79,7 @@ function Hero() {
                     </h1>
 
                     <p className="mx-auto mt-6 max-w-xl text-sm font-medium leading-relaxed text-gray-300 sm:text-base md:text-lg lg:mx-0">
-                        Join the most energetic running festival in Dumai. Run with hope,
-                        push your limit, and create unforgettable moments at the finish
-                        line.
+                        <b>MERDEKA RUN 2026</b> resmi hadir di Kota Dumai. Bersiaplah untuk sebuah momentum kebanggaan Euforia Kemerdekaan!
                     </p>
 
                     <div className="mt-8 rounded-[1.7rem] border border-white/10 bg-white/5 p-5 shadow-[0_20px_50px_rgba(0,0,0,0.35)] backdrop-blur-md sm:p-6">
